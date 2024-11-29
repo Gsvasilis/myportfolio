@@ -1,0 +1,77 @@
+@import "../responsive.scss";
+
+.footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .container {
+        width: 1366px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include sm{
+            width: 350px;
+        }
+
+
+        .social {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+    
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                list-style: none;
+                cursor: pointer;
+                @include sm{
+                    display: none;
+                }
+    
+                li {
+                    &:hover {
+                        transform: scale(1.10);
+                        transition: 1s ease;
+                        border-bottom: 1px solid aquamarine;
+                    }
+                }
+            }
+    
+            button {
+                padding: 12px 24px;
+                font-size: 15px;
+                outline: none;
+                border: 1px solid aquamarine;
+                border-radius: 20px;
+                background-color: aquamarine;
+                color: black;
+                font-weight: 100;
+                box-shadow: 0 0 10px aquamarine;
+                cursor: pointer;
+    
+                &:hover {
+                    transform: scale(1.10);
+                    transition: 1s ease;
+    
+    
+                }
+            }
+        }
+    }
+
+    .policy{
+        text-align: center;
+        margin-top: 10px;
+        font-weight: 100;
+        
+    }
+}

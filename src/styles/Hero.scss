@@ -1,0 +1,162 @@
+@import "../responsive.scss";
+
+.hero{
+    display: flex;
+    height: calc(100vh - 100px);
+
+    @include sm{
+        display: flex;
+        flex-direction: column;
+    } 
+    @include md{
+        display: flex;
+        flex-direction: column;
+    } 
+    .left{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .textContainer{
+            width: 800px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            @include sm{
+              width: 200px;
+              text-align: center;
+            } 
+            h1{
+                font-size: 50px;
+                @include sm{
+                   font-size: 35px;
+                  } 
+        }
+            .text-animation{
+                font-size: 30px;
+                background: linear-gradient(to right , hsl(0, 3%, 53%),hsl(160, 29%, 30%));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                @include sm{
+                    font-size: 20px;
+            }
+           
+        }
+            p{
+                width: 60%;
+                line-height: 22px;
+                text-align: center;
+                font-weight: 100;
+
+                @include sm{
+                    width: 170%;
+                 font-size: 14px;
+            }
+            }
+        }
+        .buttons{
+            margin-top: 20px;
+            display: flex;
+            gap: 30px;
+            @include sm{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+           }
+
+            button{
+                padding: 12px 24px;
+                font-size: 15px;
+                outline: none;
+                border: 1px solid aquamarine;
+                border-radius: 20px;
+                background-color: aquamarine;
+                color:black ;
+                font-weight: 100;
+                box-shadow: 0 0 10px aquamarine;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.10);
+                    transition: 1s ease;
+                }
+
+                &:first-child{
+                    background-color: transparent;
+                    color: aquamarine;
+                }
+            }  
+            img{
+                width: 40px;
+
+                @include sm{
+                    position: absolute;
+                    right: 20px;
+               }
+            }
+        }
+        
+    }
+    .right{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include md{
+            padding: 20px;
+        }
+
+        .imgContainer{
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            border: 1px solid aquamarine;
+            box-shadow: 0 0 5px aquamarine;
+            object-fit: cover;
+            overflow: hidden;
+             @include md{
+             width: 400px;
+             height:fit-content;
+           }
+            @include sm{
+             width: 300px;
+             height:fit-content;
+           }
+         
+            &:hover{
+                box-shadow: 0 0 10px aquamarine,
+                            0 0 15px aquamarine,
+                            0 0 20px aquamarine ;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .slider{
+        position: absolute;
+        bottom: 40px;
+        z-index: -10;
+        @include sm{
+            bottom:-30px ;
+        }
+        h1{
+            position: absolute;
+            bottom:-30px;
+            font-size: 180px;
+            font-weight: 100;
+            color: #948f8f2f;
+            white-space: nowrap;
+            z-index: -1;
+            @include sm{
+                font-size: 60px;
+                color: hsla(160, 100%, 75%, 0.247);
+           }
+        }
+    }
+}

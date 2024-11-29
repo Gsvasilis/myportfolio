@@ -1,0 +1,150 @@
+@import "../responsive.scss";
+
+.navbar {
+  position: relative;
+  height: 100px;
+  header {
+    max-width: 1366px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include md{
+    padding: 20px;
+    }
+    @include sm{
+    padding: 40px;
+    }
+
+    .logo {
+      width: 70px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid aquamarine;
+      border-radius: 8px;
+      box-shadow: 0 0 10px aquamarine;
+      cursor: pointer;
+      @include sm{
+    }
+
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      @include sm {
+        display: none;
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        list-style: none;
+        cursor: pointer;
+
+        li {
+          &:hover {
+            transform: scale(1.10);
+            transition: 1s ease;
+            border-bottom: 1px solid aquamarine;
+          }
+        }
+      }
+
+      button {
+        padding: 12px 24px;
+        font-size: 15px;
+        outline: none;
+        border: 1px solid aquamarine;
+        border-radius: 20px;
+        background-color: aquamarine;
+        color: black;
+        font-weight: 100;
+        box-shadow: 0 0 10px aquamarine;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.10);
+          transition: 1s ease;
+        }
+      }
+    }
+  }
+  .menu-icon{
+    z-index: 999;
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    display: none;
+    @include sm{
+        display: inline;
+    }
+     .icon {
+    color: aquamarine;
+    margin: 50px auto;
+    cursor: pointer;
+  }
+
+ 
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 300px;
+    backdrop-filter: blur(30px);
+    position: absolute;
+    top: 0;
+    right: -300px;
+    transition: right 0.3s ease;
+    z-index: 1;
+  
+    &.active {
+      right: 0;
+    }
+
+    ul {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      list-style: none;
+      cursor: pointer;
+
+      li {
+        &:hover {
+          transform: scale(1.10);
+          transition: 0.5s ease;
+        }
+      }
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 15px;
+      outline: none;
+      border: 1px solid aquamarine;
+      border-radius: 20px;
+      background-color: aquamarine;
+      color: black;
+      font-weight: 100;
+      box-shadow: 0 0 10px aquamarine;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.10);
+        transition: 0.5s ease;
+      }
+    }
+  }
+}
