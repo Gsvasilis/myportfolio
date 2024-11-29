@@ -5,8 +5,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  @include md{
+   padding: 100px;
+  }
   @include sm{
-   padding: 80px;
+    height: 165vh;
+   padding: 100px;
   }
     h1 {
         font-size: 70px;
@@ -17,11 +21,12 @@
 
         @include md{
             font-size: 50px;
-            margin: 40px auto;
+            margin: 20px auto;
         }
         @include sm{
             font-size: 30px;
-            margin: 40px auto;
+            margin: 20px auto;
+            padding-top: 50px;
         }
     }
 
@@ -38,10 +43,7 @@
 
         @include sm{
             width: 350px;
-            height: 600px;
-            overflow-y: scroll;
-            margin-top: 0;
-            
+            height: max-content;
         }
      
 
@@ -54,6 +56,7 @@
             @include sm{
                width: 100%;
                text-align: left;
+             
         }
     }
 
@@ -62,6 +65,9 @@
             position: absolute;
             top: 80%;
             right: 20px;
+            @include sm{
+               display: none;
+         }
         }
 
         .active {
@@ -85,6 +91,10 @@
                 font-weight: 100;
                 box-shadow: 0 0 10px aquamarine;
                 cursor: pointer;
+
+                @include sm{
+                    display: none;
+                }
 
                 &:hover {
                     transform: scale(1.10);
