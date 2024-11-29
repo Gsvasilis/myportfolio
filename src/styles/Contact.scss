@@ -15,11 +15,11 @@
      gap: 40px;
     }
     @include sm{
-     height: 50vh;
+     height: 70vh;
      display: flex;
      flex-direction: column;
      width: 100%;
-     padding-top: 50px;
+     padding-top: 80px;
     }
     .textContainer{
         flex: 1;
@@ -58,6 +58,9 @@
             flex-direction: column;
             gap: 20px;
             padding-left: 10px;
+            @include sm{
+                padding-top: 20px;
+            }
             @include md {
              align-items: center;
             }
@@ -83,7 +86,7 @@
         justify-content: center;
         position: relative;
         @include sm{
-            margin-top: 30px;
+            padding-top: 50px;
         }
 
         .phoneSvg{
@@ -93,12 +96,14 @@
             @include sm{
                 position: absolute;
                 top: 0;
-                left: -50px;
                 
                 svg{
-                width:400px;
-                height: 400px;
+                width:300px;
+                height: 300px;
+
+                
                 }
+                
             }
         }
 

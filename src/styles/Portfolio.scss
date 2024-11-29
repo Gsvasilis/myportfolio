@@ -9,6 +9,7 @@
 
     @include sm{
         padding-top: 50px;
+        height: 120vh;
     }
     h1 {
         font-size: 70px;
@@ -20,6 +21,7 @@
         @include sm{
         text-align: center;
          font-size: 30px;
+         padding-bottom: 50px;
         }
     }
 
