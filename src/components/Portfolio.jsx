@@ -29,7 +29,9 @@ function Portfolio() {
 
   return (
     <div className="portfolio" id="portfolio">
-  <h1>Featured Works</h1>
+      <div className="title">
+        <h1>Featured Works</h1>
+      </div>
       <div className="slider">   
         {items.map((item, index) => (
           <div key={item.id}>

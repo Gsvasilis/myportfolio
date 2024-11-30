@@ -8,10 +8,12 @@
     margin: 50px auto;
 
     @include sm{
-        padding-top: 50px;
-        height: 120vh;
+        padding-top: 150px;
+        height: 150vh;
     }
-    h1 {
+    .title{
+        padding-top: 70px;
+         h1 {
         font-size: 70px;
         font-weight: 200;
         background: linear-gradient(to right, hsl(0, 3%, 53%), hsl(160, 29%, 30%));
@@ -20,10 +22,11 @@
         text-align: center;
         @include sm{
         text-align: center;
-         font-size: 30px;
-         padding-bottom: 50px;
+         font-size: 40px;
         }
     }
+    }
+   
 
     .slider {
         height: 500px;

@@ -10,7 +10,7 @@
        
     }
     @include sm{
-        height: 250vh;
+        height: 200vh;
         padding-top: 20px;
     }
     .top{
@@ -59,6 +59,7 @@
             align-items: center;
             max-width: fit-content;
             margin: auto;
+            padding-top: 10px;
        }
         .titleContainer{
             display: flex;
@@ -92,6 +93,7 @@
                 -webkit-text-fill-color: transparent;
                 @include sm{
                     font-size: 40px;
+                    padding-top: 10px;
                 }
             }
         }
