@@ -46,7 +46,7 @@ function Services() {
             </div>
             <div  className="box">
                 <h3>FullStack Development</h3>
-                <p>As a FullStack Developer, I bridge the gap between front-end and back-end development to deliver complete, end-to-end solutions. Whether it's building a feature-rich client interface or architecting a resilient server infrastructure, I have the expertise to manage all aspects of the development process. My holistic approach ensures that every part of your application works seamlessly together.</p>
+                <p>As a FullStack Developer, I bridge the gap between front-end and back-end development to deliver complete, end-to-end solutions. Whether it's building a feature-rich client interface or architecting a resilient server infrastructure, I have the expertise to manage all aspects of the development process.</p>
             </div>
         </div>
       </div>

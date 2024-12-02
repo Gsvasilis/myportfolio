@@ -10,7 +10,7 @@ function Navbar() {
       <header>
         <div className="logo">
           <p>
-            <a href="/">Bill</a>
+            <a href="/">gs41</a>
           </p>
         </div>
         <nav>

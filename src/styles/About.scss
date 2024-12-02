@@ -1,18 +1,15 @@
 @import "../responsive.scss";
 
 .about {
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-  @include md{
-   padding: 100px;
-  }
-  @include sm{
-    height: 190vh;
-    padding-top: 120px;
-  }
-    h1 {
+    padding-bottom: 50px;
+
+  .title{
+    padding-bottom: 50px;
+h1 {
         font-size: 70px;
         font-weight: 200;
         background: linear-gradient(to right, hsl(0, 3%, 53%), hsl(160, 29%, 30%));
@@ -21,15 +18,16 @@
 
         @include md{
             font-size: 50px;
-            padding-top: 50px;
         }
         @include sm{
             font-size: 40px;
-            padding-top: 70px;
             width: 300px;
             text-align: center;
         }
     }
+
+  }
+    
 
     .container {
         position: relative;
@@ -44,7 +42,6 @@
         @include sm{
             width: 350px;
             height: max-content;
-            padding-top: 50px;
         }
      
 
@@ -54,9 +51,10 @@
             padding: 30px;
             line-height: 22px;
             font-weight: 100;
+            text-align: center;
             @include sm{
                width: 100%;
-               text-align: left;
+               
              
         }
     }

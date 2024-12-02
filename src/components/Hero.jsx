@@ -96,10 +96,11 @@ function Hero() {
         <motion.div variants={imageVariants} className="imgContainer">
           <img src="/profilePhoto.jpg" alt="" />
         </motion.div>
-      </motion.div>
-      <motion.div variants={sliderVariants} initial="initial" animate="animate"  className="slider">
+        <motion.div variants={sliderVariants} initial="initial" animate="animate"  className="slider">
         <motion.h1 variants={sliderVariants} > Coding Dreams into Reality</motion.h1>
       </motion.div>
+      </motion.div>
+  
     </div>
   );
 }

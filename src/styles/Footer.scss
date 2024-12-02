@@ -1,7 +1,8 @@
 @import "../responsive.scss";
 
 .footer {
-    margin-top: 20px;
+    height: 100%;
+    margin: 20px auto;
     margin-bottom: 20px;
 
     .container {
@@ -17,6 +18,8 @@
         }
         @include sm{
             width: 350px;
+            padding-left: 0;
+            padding-right: 0;
         }
 
 

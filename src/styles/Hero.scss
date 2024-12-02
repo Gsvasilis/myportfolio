@@ -2,16 +2,12 @@
 
 .hero{
     display: flex;
-    height: calc(100vh - 100px);
-
-    @include sm{
+    height: 100%;
+  @include md{
         display: flex;
         flex-direction: column;
     } 
-    @include md{
-        display: flex;
-        flex-direction: column;
-    } 
+  
     .left{
         flex: 1;
         display: flex;
@@ -107,8 +103,11 @@
         justify-content: center;
 
         @include md{
-            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            padding-top: 30px;
         }
+
 
         .imgContainer{
             width: 500px;
@@ -143,7 +142,9 @@
         bottom: 40px;
         z-index: -10;
         @include sm{
-            bottom:-20px ;
+            position: relative;
+            padding-top: 80px;
+
         }
         h1{
             position: absolute;
