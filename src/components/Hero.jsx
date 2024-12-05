@@ -1,6 +1,6 @@
-import { TypeAnimation } from "react-type-animation";
+
 import "../styles/Hero.scss";
-import resume from "../assets/resume.pdf"
+import CV from "../assets/CV.pdf"
 import {motion} from "framer-motion"
 
 const textVariants = {
@@ -63,22 +63,7 @@ function Hero() {
           <motion.h1 variants={textVariants}>
             Hi, I am <span>Vasilis Georgakopoulos</span>
           </motion.h1>
-          <TypeAnimation
-            sequence={[
-              // Same substring at the start will only be typed once, initially
-              " Web Developer",
-              1000,
-              " ReactJs Developer",
-              1000,
-              " Backend Developer",
-              1000,
-              " FullStack Professional",
-              1000,
-            ]}
-            speed={30}
-            repeat={Infinity}
-            className="text-animation"
-          />
+          <motion.h3>Junior Web Developer</motion.h3>
           <motion.p variants={textVariants}>
             {" "}
             Passionate about crafting intuitive and engaging web experiences
@@ -88,7 +73,7 @@ function Hero() {
         </motion.div>
         <motion.div className="buttons" variants={textVariants}>
             <button><a href="#portfolio">see the latest works</a></button>
-            <button><a href={resume} download="resume">my resume</a></button>
+            <button><a href={CV} download="resume">my resume</a></button>
             <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="" />
         </motion.div>
       </motion.div>

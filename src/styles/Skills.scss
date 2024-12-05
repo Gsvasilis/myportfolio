@@ -1,0 +1,46 @@
+@import "../responsive.scss";
+
+.skills {
+    margin: 80px auto;
+
+    .title {
+        text-align: center;
+
+        h1 {
+            font-size: 70px;
+            font-weight: 300;
+            background: linear-gradient(to right, hsl(0, 3%, 53%), hsl(160, 29%, 30%));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            @include sm{
+                font-size: 40px;
+            }
+        }
+
+        h4 {
+            font-size: 20px;
+            font-weight: 200;
+            background: linear-gradient(to right, hsl(0, 3%, 53%), hsl(160, 29%, 30%));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .boxContainer {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        margin: 50px auto;
+
+        @include sm{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            padding-top: 30px;
+        }
+       
+    }
+}

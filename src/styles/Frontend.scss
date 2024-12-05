@@ -1,0 +1,60 @@
+@import "../responsive.scss";
+.frontend {
+
+    .box {
+        width: 400px;
+        border: 1px solid aquamarine;
+        border-radius: 10px;
+        box-shadow: 0 0 10px aquamarine;
+        padding: 20px;
+
+        @include sm{
+            width:300px;
+        }
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+
+            h3 {
+                font-size: 22px;
+                font-weight: 300;
+            }
+        }
+
+        .boxContainer {
+            display: flex;
+            justify-content: space-between;
+           
+        }
+
+        .box-skills {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            @include sm{
+                display: flex;
+                flex-direction: row;
+                width: 250px;
+             
+            }
+        }
+
+        .skill {
+            display: flex;
+            gap: 5px;
+            width: 200px;
+          
+
+            .subskill {
+                h3 {
+                    font-weight: 500;
+                }
+
+                p {
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+}

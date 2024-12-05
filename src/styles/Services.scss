@@ -5,10 +5,10 @@
     margin: 50px auto;
     display: flex;
     flex-direction: column;
-    padding-top: 30px;
+    padding-top: 50px;
 
     @include sm{
-        padding-top: 20px;
+        padding-top: 30px;
     }
     .top{
         flex:0.5;

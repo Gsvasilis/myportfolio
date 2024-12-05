@@ -5,12 +5,14 @@ import { AlignJustify } from "lucide-react";
 function Navbar() {
   const [open, setOpen] = useState(false);
 
+
+
   return (
     <div className="navbar">
-      <header>
+      <header className="header">
         <div className="logo">
           <p>
-            <a href="/">gs41</a>
+            <a href="/">Gs</a>
           </p>
         </div>
         <nav>
@@ -19,7 +21,7 @@ function Navbar() {
               <a href="">home</a>
             </li>
             <li>
-              <a href="#services">services</a>
+              <a href="#skills">skills</a>
             </li>
             <li>
               <a href="#portfolio">portfolio</a>
