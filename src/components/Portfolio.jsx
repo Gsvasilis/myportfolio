@@ -6,14 +6,20 @@ const items = [
   {
     id: 1,
     title: "CineStream",
-    desc: " I created a comprehensive video streaming platform for watching movies and series on various devices. I developed the frontend using React for a dynamic and fast user experience. I used react-router-dom for navigation within the application, enabling smooth transitions between pages. I connected the frontend to the backend using Axios for secure and efficient HTTP requests. I utilized Zustand for state management, providing efficient and flexible state management.",
+    desc: "Developed a seamless movie streaming platform using React.js for the frontend, Node.js for the backend, and integrated with the TMDb API. Implemented state management with Zustand and API interactions with Axios to ensure efficient data fetching and state handling.",
     img: "/portfolio1.png",
   },
   {
     id: 2,
     title: "E-Commerce",
-    desc: "I created an e-commerce platform for buying and selling products online. The frontend was developed using React to create a dynamic and user-friendly experience. For navigation within the application, I used react-router-dom, allowing smooth and fast transitions between pages. I connected the frontend to the backend via Axios, enabling secure and efficient data exchange. Zustand was utilized for state management, providing efficient and flexible state handling.",
+    desc: "Developed a dynamic e-commerce platform using React.js for the frontend, Node.js for the backend, and MongoDB for the database. Implemented state management with Zustand, API interactions with Axios, and added engaging animations with Framer Motion to enhance user experience.",
     img: "/portfolio2.png",
+  },
+  {
+    id:3,
+    title: "DateApp",
+    desc: "Developed a sophisticated dating application similar to Tinder using React.js for the frontend and Node.js for the backend. Utilized Zustand for state management, Axios for API interactions, and Socket.io for real-time communication to ensure a seamless and interactive user experience.",
+    img:"/dateApp.png"
   },
 ];
 
