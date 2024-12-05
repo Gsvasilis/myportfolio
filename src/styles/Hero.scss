@@ -112,10 +112,11 @@
             width: 450px;
             height: 450px;
             border-radius: 50%;
-            border: 8px solid aquamarine;
+            border: 3px solid aquamarine;
+            box-shadow: 0 0 5px aquamarine;
             object-fit: cover;
             overflow: hidden;
-            animation: border_animate 6s ease-in-out infinite 1s;
+            // animation: border_animate 6s ease-in-out infinite 1s;
              @include md{
              width: 350px;
              height:fit-content;
@@ -155,15 +156,15 @@
     }
 }
 
-@keyframes border_animate {
-    0%{
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
-    50%{
-        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-    }
-    100%{
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
+// @keyframes border_animate {
+//     0%{
+//         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+//     }
+//     50%{
+//         border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+//     }
+//     100%{
+//         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+//     }
     
-}
+// }
