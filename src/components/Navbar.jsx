@@ -45,7 +45,7 @@ function Navbar() {
             <a href=""onClick={() => setOpen((prev) => !prev)} >home</a>
           </li>
           <li>
-            <a href="#services" onClick={() => setOpen((prev) => !prev)} >services</a>
+            <a href="#skills" onClick={() => setOpen((prev) => !prev)} >skills</a>
           </li>
           <li>
             <a href="#portfolio" onClick={() => setOpen((prev) => !prev)} >portfolio</a>

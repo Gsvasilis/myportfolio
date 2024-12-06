@@ -36,10 +36,11 @@ function Contact() {
     <div className="contact" id="contact">
       <div className="title">
         <h1>Contact me</h1>
+        <h4>Get in touch</h4>
       </div>
-      <div className="contactContainer">
+      <div className="wrapper">
+        <div className="contactContainer">
         <div className="contactDetails">
-          <h3>Talk to me</h3>
           <div className="box">
             <p>
               <Mail />
@@ -65,8 +66,9 @@ function Contact() {
               </p>
             </div>
           </div>
-        </div>
-        <div className="formContainer">
+        </div> 
+      </div> 
+      <div className="formContainer">
           <form onSubmit={onSubmit}>
             <input type="text" name="name" placeholder="Insert Your Name" />
 
@@ -83,6 +85,7 @@ function Contact() {
           </form>
         </div>
       </div>
+      
     </div>
   );
 }

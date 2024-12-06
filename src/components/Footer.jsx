@@ -22,9 +22,6 @@ function Footer() {
             <a href="#portfolio">portfolio</a>
           </li>
         </ul>
-        <button>
-          <a href="#contact">Contact me</a>
-        </button>
       </nav>
         </div>
       <div className="policy">

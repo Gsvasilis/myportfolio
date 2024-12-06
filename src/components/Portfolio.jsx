@@ -1,6 +1,11 @@
-import { useState } from "react";
+
 import "../styles/Portfolio.scss";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 const items = [
   {
@@ -24,25 +29,37 @@ const items = [
 ];
 
 function Portfolio() {
-  const [current, setCurrent] = useState(0);
-  const length = items.length;
-  const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
-  };
-  const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
-  };
+
 
   return (
     <div className="portfolio" id="portfolio">
       <div className="title">
         <h1>Featured Works</h1>
+        <h4>My Latest Projects</h4>
       </div>
-      <div className="slider">   
-        {items.map((item, index) => (
+      <Swiper className="slider"
+         loop ={true}
+         grabCursor={true}
+         slidesPerView={1}
+         spaceBetween={10}
+         pagination={{
+           clickable: true,
+         }}
+         breakpoints={{
+           576: {
+             slidesPerView: 1,
+             spaceBetween: 20,
+           },
+           768: {
+             slidesPerView: 1,
+             spaceBetween: 40,
+           },
+         }}
+         modules={[Pagination]}
+      >   
+        {items.map((item) => (
           <div key={item.id}>
-            {index === current && (
-              <div className="sliderContainer">
+              <SwiperSlide className="sliderContainer">
                 <div className="imgContainer">
                   <div className="container">
                     <img src={item.img} alt={item.title} />
@@ -51,15 +68,10 @@ function Portfolio() {
                 <div className="description">
                   <h2>{item.title}</h2> <p>{item.desc}</p>
                 </div>
-                <div className="arrows">
-                    <ArrowLeft className="sliderArrow" onClick={prevSlide} />
-                    <ArrowRight  className="sliderArrow"  onClick={nextSlide} />
-                  </div>
-                </div>
-            )}
+                </SwiperSlide>
           </div>
         ))}
-      </div>
+      </Swiper>
     </div>
   );
 }

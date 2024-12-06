@@ -9,10 +9,10 @@ function Skills() {
         <h1>Skills</h1>
         <h4>My technical level</h4>
       </div>
-      <div className="boxContainer">
-        <Frontend/>
-        <Backend/>
-      </div>
+      <div className="wrapper">
+           <Frontend/> 
+         <Backend/>
+       </div>
     </div>
   );
 }

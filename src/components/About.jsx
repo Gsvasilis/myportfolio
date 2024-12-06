@@ -1,48 +1,51 @@
 import "../styles/About.scss";
-import { motion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
-
-
-const arrowVariants = {
-  arrowIcon: {
-    opacity: 0,
-    y: 10,
-    transition: {
-      duration: 2,
-      repeat: Infinity,
-    },
-  },
-};
+import { GraduationCap,Headset, Briefcase} from "lucide-react";
 
 function About() {
-
-
   return (
     <div className="about" id="about">
       <div className="title">
-         <h1>About me</h1>  
+        <h1>About me</h1>
+        <h4>My Introduction</h4>
       </div>
-      <div className="container">
+      <div className="wrapper">
+        <div className="imgContainer">
+          <img src="/profilePhoto.jpg" alt="" />
+        </div>
+        <div className="textContainer">
+          <div className="boxContainer">
+              <div className="box">
+          <GraduationCap/>
+          <h4>Experience</h4>
+          <p>New Entry</p>
+          </div>
+          <div className="box">
+          <Briefcase/>
+          <h4>Completed</h4>
+          <p>3</p>
+          </div>
+          <div className="box">
+          <Headset/>
+          <h4>Support</h4>
+          <p>24/7</p>
+          </div>
+          </div>
+           <div className="container">
         <p>
-          Hi, I'm <b>Vasilis Georgakopoulos</b>, a passionate{" "}
-          <b>Junior Web Developer</b> embarking on an exciting journey in the tech industry. Although I'm
-          new to the field,I've recently completed an intensive 12-month program at
-          Datalabs, where I honed my skills and developed a deep understanding
-          of web development. As a <b>Frontend Developer</b>, my
-          expertise lies in <b>React.js</b>. I'm equally adept as a <b>Backend Developer</b> with <b>Node.js</b>, enabling me to build
-          robust and scalable server-side applications.Beyond my
-          professional pursuits, I have a few personal passions that keep me
-          balanced and inspired. I enjoy gymnastics, which has taught me
-          discipline and perseverance.Reading books is another passion
-          of mine, always eager to learn and grow through new knowledge. Additionally, I love kayaking, which provides a sense of adventure and
-          tranquility, helping me recharge and stay focused. I am committed
-          to continuously learning and evolving in this ever-changing field.I'm excited about the opportunities
-          ahead and am always open to new projects and collaborations. Feel free
-          to get in touch to discuss potential projects, share ideas, or just
-          say
-          <b> hello</b>!
+          Hi,I'm <b>Vasilis Georgakopoulos</b>, a <b>Junior Web Developer</b> .{" "}
+          <br />I recently completed a 12-month program at Datalabs, where I
+          gained strong skills in <b>frontend</b> and
+          <b> backend </b> development.I'm passionate about continuous learning
+          and am open to new projects and collaborations. Outside of work, I
+          enjoy gymnastics, reading, and kayaking. I'm excited about the
+          opportunities ahead and am always open to new projects and
+          collaborations. Feel free to get in touch to discuss potential
+          projects, share ideas, or just say <b>hello!</b>
         </p>
       </div>
+        </div>
+      </div>
+     
     </div>
   );
 }

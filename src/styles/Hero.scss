@@ -3,7 +3,12 @@
 .hero{
     display: flex;
     padding-top: 50px;
+    margin: auto;
   @include md{
+        display: flex;
+        flex-direction: column;
+    } 
+  @include lg{
         display: flex;
         flex-direction: column;
     } 
@@ -21,6 +26,10 @@
             align-items: center;
             gap: 10px;
 
+            @include md{
+              width: 100%;
+              text-align: center;
+            } 
             @include sm{
               width: 200px;
               text-align: center;
@@ -38,6 +47,10 @@
             background: linear-gradient(to right , hsl(0, 3%, 53%),hsl(160, 29%, 30%));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+
+            @include sm{
+                width: 150%;
+            }
             
 
           }
@@ -47,6 +60,10 @@
                 text-align: center;
                 font-weight: 100;
 
+                @include lg{
+                    width: 60%;
+                 font-size: 14px;
+            }
                 @include sm{
                     width: 170%;
                  font-size: 14px;
@@ -100,8 +117,17 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @include lg{
+            flex-direction: column;
+         
+        }
 
         @include md{
+            display: flex;
+            flex-direction: column;
+            padding-top: 30px;
+        }
+        @include lg{
             display: flex;
             flex-direction: column;
             padding-top: 30px;
@@ -109,11 +135,11 @@
 
 
         .imgContainer{
-            width: 450px;
-            height: 450px;
+            width: 400px;
+            height: 400px;
+            border: 1px solid aquamarine;
             border-radius: 50%;
-            border: 3px solid aquamarine;
-            box-shadow: 0 0 5px aquamarine;
+            box-shadow: 0 0 10px aquamarine;
             object-fit: cover;
             overflow: hidden;
             // animation: border_animate 6s ease-in-out infinite 1s;
@@ -137,7 +163,7 @@
         z-index: -10;
         @include sm{
             position: relative;
-            padding-top: 80px;
+        
 
         }
         h1{

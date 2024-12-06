@@ -15,9 +15,10 @@ function App() {
           <Navbar />
           <Hero />
           <Skills/>
+          <About />
           <Portfolio />
           <Contact />
-          <About />
+          
           <hr style={{ height: "2px", background: "aquamarine" }} />
           <Footer />
     </div>

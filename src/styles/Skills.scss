@@ -1,7 +1,21 @@
 @import "../responsive.scss";
 
 .skills {
-    margin: 80px auto;
+    margin: 150px auto;
+
+    @include lg{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    @include md{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    @include sm{
+        margin: 50px auto;
+    }
 
     .title {
         text-align: center;
@@ -26,14 +40,41 @@
             -webkit-text-fill-color: transparent;
         }
     }
-
-    .boxContainer {
-
+    .wrapper{
+        width: 1100px;
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 50px;
-        margin: 50px auto;
+        justify-content: space-between;
+        margin: auto;
+        padding-top: 50px;
+
+        @include sm{
+            width: 300px;
+            flex-direction: column;
+            gap: 50px;
+            margin: auto;
+        }
+        @include md{
+            width: 300px;
+            flex-direction: column;
+            gap: 50px;
+            margin: auto;
+        }
+        @include lg{
+            width: 300px;
+            flex-direction: column;
+            gap: 50px;
+            margin: auto;
+        }
+
+    .boxContainer {
+        display: flex;
+        margin: auto;
+        @include lg{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
 
         @include sm{
             display: flex;
@@ -43,4 +84,6 @@
         }
        
     }
+
+}
 }
