@@ -1,0 +1,191 @@
+@import "../responsive.scss";
+
+.contact{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    @include xl{
+        max-width: 1024px;
+        margin: auto;
+        padding: 20px;
+    }
+    @include lg{
+        max-width: 768px;
+        margin: auto;
+        padding: 20px;
+    }
+    @include md{
+        max-width: 576px;
+        margin: auto;
+        padding: 20px;
+    }
+    @include sm{
+        max-width: 350px;
+    }
+    .titleContainer{
+        text-align: center;
+        h1{
+            background: linear-gradient(to right, hsl(0, 3%, 53%), hsl(160, 29%, 30%));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 40px;
+            font-weight: 500;
+        }
+        h4{
+            background: linear-gradient(to right, hsl(0, 3%, 53%), hsl(160, 29%, 30%));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 20px;
+            font-weight: 300;
+        }
+    }
+
+    .contactContainer{
+        display: flex;
+        padding-top: 50px;
+        @include sm{
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .left{
+            flex:1;
+            .contactDetails{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+    
+                h3{
+                    font-size: 30px;
+                    font-weight: 200;
+                    background: linear-gradient(to right,#00ffff88,#00ffffc4,#00ffff88);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                
+                }
+    
+                .box{
+                    border: 1px solid aquamarine;
+                    box-shadow: 0 0 8px aquamarine;
+                    border-radius: 8px;
+                    width: 350px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px;
+                    @include lg{
+                        max-width: 250px;
+                       
+                    }
+                    @include md{
+                        max-width: 200px;
+                       
+                    }
+                    @include sm{
+                        max-width: 300px;
+                       
+                    }
+    
+              
+                    
+                    span{
+                        font-weight: 100;
+                    }
+                    .write{
+                        display: flex;
+                        gap: 5px;
+                        padding-top: 20px;
+                    }
+                }
+            }
+        }
+        .right{
+            flex: 1;
+            display: flex;
+            justify-content: end;
+            form{
+                width: 600px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                @include xl{
+                    width: 450px;
+                  
+                }
+                @include lg{
+                    max-width: 400px;
+                   
+                }
+                @include md{
+                    max-width: 300px;
+                    gap:15px;
+                   
+                }
+                @include sm{
+                    max-width: 300px;
+                   
+                }
+             
+    
+                input{
+                    background-color: transparent;
+                    color: aquamarine;
+                    border: 1px solid aquamarine;
+                    border-radius: 8px;
+                    box-shadow: 0 0 8px aquamarine;
+                    outline: none;
+                    padding: 15px;
+                    &:focus{
+                        border: 3px solid aquamarine;
+                    }
+                    &::placeholder{
+                        color: aquamarine;
+                        font-family:Outfit ;
+                        font-weight: 100;
+                       
+                    }
+                 
+                }
+    
+                textarea{
+                    background-color: transparent;
+                    border: 1px solid aquamarine;
+                    color: aquamarine;
+                    border-radius: 8px;
+                    box-shadow: 0 0 8px aquamarine;
+                    outline: none ;
+                    padding: 15px;
+                    &:focus{
+                        border: 3px solid aquamarine;
+                    }
+                    &::placeholder{
+                        color: aquamarine;
+                        font-family:Outfit ;
+                        font-weight: 100;
+                       
+                    }
+                }
+                button{
+                background-color: transparent;
+                color: aquamarine;
+                font-size: 15px;
+                padding: 15px;
+                border: 1px solid aquamarine;
+                border-radius: 8px;
+                box-shadow: 0 0 8px aquamarine;
+                    outline: none;
+                    font-weight: 300;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #7fffd4ce;
+                        transition: 0.5s ease;
+                    }
+    
+                 
+                }
+            }
+        }
+    }
+
+}

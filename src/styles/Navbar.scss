@@ -1,0 +1,117 @@
+@import "../responsive.scss";
+
+.navbar {
+    width: 1366px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    @include xl {
+        max-width: 1024px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    @include lg {
+        max-width: 768px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    @include md {
+        max-width: 576px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    @include sm {
+        width: auto;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .logo {
+        padding: 10px 40px;
+        border: 1px solid aquamarine;
+        border-radius: 10px;
+        box-shadow: 0 0 5px aquamarine;
+
+    }
+
+    nav {
+        @include sm {
+            display: none;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+            li {
+                transition: 0.5s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.10);
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid;
+                }
+            }
+        }
+    }
+
+    .sidebar-icon {
+        position: absolute;
+        right: 30px;
+        z-index: 999;
+        display: none;
+
+        @include sm {
+            display: inline;
+        }
+    }
+
+    .sidebar {
+        position: absolute;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        transition: 0.5s ease;
+        z-index: 1;
+       backdrop-filter: blur(40px);
+
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+
+            li {
+                transition: 0.5s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.10);
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid;
+                }
+            }
+        }
+
+
+    }
+
+    .active {
+        display: flex;
+        right: 0;
+    }
+}

@@ -1,0 +1,136 @@
+@import "../responsive.scss";
+    .portfolio {
+        padding-top: 80px;
+      
+        @include xl{
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+        }
+        @include lg{
+            max-width: 768px;
+            margin: auto;
+            padding: 20px;
+        }
+        @include md{
+            max-width: 576px;
+            margin: auto;
+            padding: 20px;
+        }
+        @include sm{
+           width: auto;
+         
+        }
+        .titleContainer{
+            text-align: center;
+            padding-bottom: 50px;
+            h1{
+                background: linear-gradient(to right, hsl(0, 3%, 53%), hsl(160, 29%, 30%));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 40px;
+                font-weight: 500;
+            }
+            h4{
+                background: linear-gradient(to right, hsl(0, 3%, 53%), hsl(160, 29%, 30%));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 20px;
+                font-weight: 300;
+            }
+        }
+       
+    
+        .slider {
+            height: 500px;
+            border: 1px solid aquamarine;
+            border-radius: 8px;
+            box-shadow: 0 0 8px aquamarine;
+            @include sm{
+            width: 300px;
+
+            }
+       
+            .swiperContainer {
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+              @include lg{
+                padding: 20px;
+            }
+            @include md{
+                flex-direction: column;
+                gap: 20px;
+            }
+            @include sm{
+                flex-direction: column;
+                gap: 20px;
+            }
+                    .imgContainer {
+                        width: 600px;
+                        height: 300px;
+                        border-radius: 20px;
+                        overflow: hidden;
+                        @include xl{
+                            width: 450px;
+                        }
+                        @include lg{
+                         width: 350px;
+                         height: 200px;
+                        }
+                        @include sm{
+                         width: 270px;
+                         height: 200px;
+                        }
+                   
+                    img {
+                      width: 110%;
+                      height: 100%; 
+                      object-fit: cover;
+                    }
+                }
+                    .descContainer {
+                        width: 500px;
+                        height: 300px;
+                        text-align: center;
+                        @include xl{
+                            width: 450px;
+                        }
+                        @include lg{
+                            width: 350px;
+                        }
+                    h2 {
+                        font-weight: 200;
+                    }
+
+                    .parContainer{
+                        padding-top: 50px;
+                        @include lg{
+                         padding: 20px;
+                        }
+                        p{
+                            font-weight: 100;
+                            line-height: 22px;
+                        }
+                    }
+                }
+    
+              
+    
+              
+            }
+    
+        }
+    
+        /* Change the color of the pagination bullets */
+    .swiper-pagination-bullet {
+        background-color: aquamarine; /* Your desired color */
+      }
+      
+      /* Change the color of the active pagination bullet */
+      .swiper-pagination-bullet-active {
+        background-color: aquamarine; /* Your desired color */
+      }
+      
+    
+    } 

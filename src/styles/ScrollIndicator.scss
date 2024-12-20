@@ -1,0 +1,19 @@
+@import "../responsive.scss";
+.scrollBtn {
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    z-index: 1000;
+
+@include sm{
+display: none !important;
+}
+     img {
+      width: 40px;
+      @include md {
+        width: 30px;
+      }
+    }
+  }
+  

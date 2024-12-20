@@ -1,0 +1,76 @@
+@import "../responsive.scss";
+.footer{
+    border-top: 1px solid aquamarine;
+    
+    .footerContainer{
+        width: 1366px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        @include xl{
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+        }
+        @include lg{
+            max-width: 768px;
+            margin: auto;
+            padding: 20px;
+        }
+        @include md{
+            max-width: 576px;
+            margin: auto;
+        }
+        @include sm{
+            width: auto;
+            padding: 20px;
+        }
+
+        .socialContainer{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            p{
+             
+
+                    &:hover{
+                        transform: scale(1.20);
+                        transition: 0.5s ease; 
+                                 
+                    } 
+                
+            }
+
+        }
+        nav{
+
+            ul{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                li{ 
+                   
+                    &:hover{
+                        transform: scale(1.20);
+                         transition: 0.5s ease;        
+                    } 
+                }
+            }
+        }
+    }
+    .policyContainer{
+        text-align: center;
+        padding-bottom: 10px;
+        @include sm{
+            width: 300px;
+            margin: auto;
+            font-size: 12px;
+        }
+        p{
+            font-weight: 100;
+        }
+    }
+
+}

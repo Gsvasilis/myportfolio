@@ -1,0 +1,142 @@
+@import "../responsive.scss";
+
+.about{
+    padding-top: 80px;
+    @include xl{
+        max-width: 1024px;
+        margin: auto;
+        padding: 20px;
+    }
+    @include lg{
+        max-width: 768px;
+        margin: auto;
+        padding: 20px;
+    }
+    @include md{
+        max-width: 576px;
+    }
+    @include sm{
+     width: auto;
+     margin: auto;
+    }
+    .titleContainer{
+        text-align: center;
+        h1{
+            background: linear-gradient(to right, hsl(0, 3%, 53%), hsl(160, 29%, 30%));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 40px;
+            font-weight: 500;
+        }
+        h4{
+            background: linear-gradient(to right, hsl(0, 3%, 53%), hsl(160, 29%, 30%));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 20px;
+                font-weight: 300;
+        }
+    }
+    .aboutContainer{
+        display: flex;
+        padding-top: 50px;
+    
+        @include sm{
+            flex-direction: column;
+            align-items: center;
+        }
+        .left{
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .right{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            gap: 20px;
+            @include lg{
+               width: 450px;
+            }
+            @include lg{
+                margin-left: 10px; 
+            }
+            @include sm{
+                width: auto;
+                margin: auto;
+                padding-top: 30px;
+            }
+
+            .boxContainer{
+                display: flex;
+                justify-content: space-between;
+                @include lg{
+                    gap: 20px;
+                }
+                @include md{
+                    width: 320px;
+                }
+                @include sm{
+                    flex-direction: column;
+                    align-items: center;
+                    margin: auto;  
+                    gap: 20px;
+                }
+
+                .box{
+                        width: 150px;
+                        height: 100px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 5px;
+                        border: 1px solid aquamarine;
+                        border-radius: 8px;
+                        box-shadow: 0 0 8px aquamarine;
+                        @include lg{
+                        width: 120px;
+                        }
+                        @include md{
+                        width: 100px;
+                        padding: 5px;
+                        }
+                        @include sm{
+                            width: 300px;
+                           
+                        }
+    
+                        h4 {
+                            font-weight: 200;
+                        }
+                        p{
+                            font-weight: 100;
+                        }
+    
+                }
+            }
+            .parContainer{
+                width: 500px;
+                margin: auto;
+                text-align: center;
+                line-height: 22px;
+                @include lg{ 
+                    width: 450px;
+                 }
+                @include md{ 
+                    width: 250px;
+                 }
+                @include sm{ 
+                    width: 300px;
+                 }
+
+                p{
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+
+}
