@@ -87,7 +87,7 @@ function Home() {
       </motion.div>
       <motion.div variants={imgVariants} initial="initial" animate="animate" className="right">
         <div className="imgContainer">
-          <img src="/profilePhoto.jpg" alt="" />
+          <img src="/homeImg.jpg" alt="" />
         </div>
       </motion.div>
     </section>
