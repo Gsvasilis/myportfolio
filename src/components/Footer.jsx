@@ -11,7 +11,7 @@ function Footer() {
         <div className="footerContainer">
           <div className="socialContainer">
         <p>
-          <a href="https://github.com/Gsfortyone" target="_blank">
+          <a href="https://github.com/Gsvasilis" target="_blank">
             <FaGithub size={25} />
           </a>
         </p>
